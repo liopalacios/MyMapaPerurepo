@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.palacios.hp.mymapaperu.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<Button
+    android:layout_width="match_parent"
+    android:id="@+id/btnMaps"
+    android:onClick="irMapa"
+    android:text="IR AL MAPA"
+    android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingTop="60dp"
+            android:id="@+id/llAyaIqui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivAyacucho"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:paddingLeft="15dp"
+                android:onClick="irMapa"
+                android:src="@drawable/ayacucho" />
+
+            <ImageView
+                android:id="@+id/ivIquitos"
+                android:paddingLeft="15dp"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:onClick="irMapa"
+                android:src="@drawable/iquitos" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingTop="60dp"
+            android:layout_below="@+id/llAyaIqui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivPiura"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:paddingLeft="15dp"
+                android:onClick="irMapa"
+                android:src="@drawable/piura" />
+
+            <ImageView
+                android:id="@+id/ivCusco"
+                android:paddingLeft="15dp"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:onClick="irMapa"
+                android:src="@drawable/cusco" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
